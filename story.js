@@ -101,3 +101,4 @@ function updateStory(stage) {
 }
 
 window.onload = startGame;
+

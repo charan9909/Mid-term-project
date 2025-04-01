@@ -67,26 +67,4 @@ function startGame() {
 }
 
 function updateStory(stage) {
-    const storyText = document.getElementById("story-text");
-    const storyImage = document.getElementById("story-image");
-    const choicesContainer = document.getElementById("choices-container");
-    const restartButton = document.getElementById("restart-button");
-
-    const currentStage = story[stage];
-    storyText.textContent = currentStage.text;
-    storyImage.src = currentStage.image;
-    choicesContainer.innerHTML = "";
-
-    if (currentStage.choices.length > 0) {
-        currentStage.choices.forEach(choice => {
-            const button = document.createElement("button");
-            button.textContent = choice.text;
-            button.onclick = () => updateStory(choice.next);
-            choicesContainer.appendChild(button);
-        });
-    } else {
-        restartButton.style.display = "block";
-    }
-}
-
-window.onload = startGame;
+    const

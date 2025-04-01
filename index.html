@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
         <h1>Choose Your Own Adventure</h1>
         <div id="story-container">
@@ -15,7 +14,7 @@
             <img id="story-image" src="images/start.jpg" alt="Story Image">
         </div>
         <div id="choices-container"></div>
-        <button id="restart-button" onclick="startGame()">Restart Game</button>
+        <button id="restart-button" onclick="startGame()" style="display: none;">Restart Game</button>
     </div>
 
     <footer>
@@ -27,6 +26,5 @@
         document.getElementById('lastModified').textContent = x;
     </script>
     <script src="story.js"></script>
-
 </body>
 </html>

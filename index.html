@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Choose Your Own Adventure</h1>
+        <div id="story-container">
+            <p id="story-text">Welcome to your adventure!</p>
+            <img id="story-image" src="images/start.jpg" alt="Story Image">
+        </div>
+        <div id="choices-container"></div>
+        <button id="restart-button" onclick="startGame()">Restart Game</button>
+    </div>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="story.js"></script>
+
+</body>
+</html>

@@ -119,3 +119,4 @@ function updateStory(stage) {
 
 // Start game on page load
 window.onload = startGame;
+

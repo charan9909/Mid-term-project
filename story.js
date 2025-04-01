@@ -116,6 +116,8 @@ function updateStory(stage) {
     const storyImage = document.getElementById("story-image");
     const choicesContainer = document.getElementById("choices-container");
     const restartButton = document.getElementById("restart-button");
+    console.log("Current Stage: ", stage); // Debugging line
+
 
     const currentStage = story[stage];
     storyText.textContent = currentStage.text;
